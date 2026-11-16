@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivana Azarola | Software Engineer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #09090b;
+      color: #f4f4f5;
+      line-height: 1.6;
+    }
+    .container { max-width: 920px; margin: 0 auto; padding: 56px 20px 80px; }
+    header { margin-bottom: 56px; padding-bottom: 36px; border-bottom: 1px solid #27272a; }
+    .badge {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; color: #ffffff; }
+    .bio { font-size: 1.05rem; color: #a1a1aa; max-width: 650px; margin-bottom: 24px; }
+    .social-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-social {
+      display: inline-block;
+      background: #18181b;
+      border: 1px solid #27272a;
+      color: #f4f4f5;
+      padding: 9px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+    .btn-social:hover { border-color: #52525b; background: #27272a; }
+    section { margin-bottom: 56px; }
+    h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 22px; color: #ffffff; }
+    .grid { display: grid; gap: 22px; }
+    .grid-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 22px; }
+    .card {
+      background: #121215;
+      border: 1px solid #27272a;
+      border-radius: 12px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover { border-color: #3f3f46; }
+    .kicker { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #71717a; margin-bottom: 8px; }
+    .card h3 { font-size: 1.22rem; font-weight: 700; color: #ffffff; margin-bottom: 10px; line-height: 1.35; }
+    .card p { color: #a1a1aa; font-size: 0.95rem; margin-bottom: 18px; flex-grow: 1; }
+    .project-img { width: 100%; border-radius: 8px; border: 1px solid #27272a; margin-bottom: 18px; display: block; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 20px; }
+    .tag { font-size: 0.78rem; color: #d4d4d8; background: #1f1f23; border: 1px solid #2e2e34; padding: 3px 10px; border-radius: 6px; }
+    .card-footer { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding-top: 16px; border-top: 1px solid #27272a; }
+    .link-action { color: #38bdf8; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+    .link-action:hover { text-decoration: underline; }
+    .btn-live {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      padding: 5px 13px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    .btn-live:hover { background: rgba(16, 185, 129, 0.25); }
+    .video-pill {
+      background: #1f1f23;
+      border: 1px solid #2e2e34;
+      color: #e4e4e7;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      text-decoration: none;
+    }
+    .video-pill:hover { border-color: #38bdf8; color: #38bdf8; }
+    footer { text-align: center; color: #71717a; font-size: 0.85rem; padding-top: 28px; border-top: 1px solid #27272a; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Software Engineer</div>
+      <h1>Ivana Azarola</h1>
+      <p class="bio">Building full-stack web applications, AI-assisted systems, and computational simulations. Experienced in Python backends and modern TypeScript frontends.</p>
+      <div class="social-links">
+        <a class="btn-social" href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a class="btn-social" href="https://github.com/anavica209/anavica209.github.io" target="_blank">GitHub (@anavica209)</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Software Engineering Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="kicker">Featured Full-Stack AI Application</div>
+          <h3>Zaino — Visual &amp; Geometry Challenge</h3>
+          <img class="project-img" src="zaino-preview.png" alt="Zaino Visual Challenge Gameplay Screenshot">
+          <p>Full-stack visual perception and geometry puzzle game. Features server-side score and streak tracking, paired with an integrated RAG-powered AI assistant that provides contextual hints from PDF knowledge bases without leaking answers.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Django REST</span>
+            <span class="tag">LangChain &amp; Groq</span>
+            <span class="tag">Chroma RAG</span>
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">TanStack Query</span>
+          </div>
+          <div class="card-footer">
+            <a class="link-action" href="https://github.com/anavica209/frontend-web-imagesGame" target="_blank">Frontend Repository →</a>
+            <a class="link-action" href="https://github.com/anavica209/backend-web-imagesGame" target="_blank">Backend Repository →</a>
+          </div>
+        </article>
+
+        <div class="grid-two">
+          <article class="card">
+            <div class="kicker">Production Web App</div>
+            <h3>Fire Glass — Tarot Web Application</h3>
+            <p>Interactive Python web application deployed in production featuring automated Tarot card logic, custom spreads, and dynamic readings.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastApi</span>
+	      <span class="tag">Postgres</span>
+	      <span class="tag">SQLAlchemy + Alembic</span>
+              <span class="tag">Docker</span>
+            </div>
+            <div class="card-footer">
+              <a class="btn-live" href="https://fireglass-service-z2wfy6-4c9454-109-199-98-167.traefik.me/" target="_blank">● Live Demo ↗</a>
+              <a class="link-action" href="https://github.com/anavica209/fire-glassrepo" target="_blank">Source Code →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="kicker">Computational Modeling</div>
+            <h3>Systems Simulation &amp; Cellular Automata</h3>
+            <p>Implementation of the Off-Lattice Automaton algorithm for self-propelled particle flocks, based on the seminal paper <em>"Novel Type of Phase Transition in a System of Self-Driven Particles"</em>.</p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">Complex Systems</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <div class="card-footer">
+              <a class="video-pill" href="https://www.youtube.com/watch?v=014XmzKCbqk" target="_blank">Demo 1 ↗</a>
+              <a class="video-pill" href="https://www.youtube.com/watch?v=MwQimKWUfKI" target="_blank">Demo 2 ↗</a>
+              <a class="video-pill" href="https://www.youtube.com/watch?v=qBSBA6TZh-g" target="_blank">Demo 3 ↗</a>
+              <a class="video-pill" href="https://www.youtube.com/watch?v=usbkGMjPeeY" target="_blank">Demo 4 ↗</a>
+              <a class="video-pill" href="https://www.youtube.com/watch?v=qrDlk-hhyEM" target="_blank">Demo 5 ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research &amp; Academic Publications</h2>
+      <div class="grid-two">
+
+        <article class="card">
+          <div class="kicker">Master's Thesis · ITBA</div>
+          <h3>Value Proposition for Launching a Sustainable Mobility &amp; Self-Guided Tourism Service in El Calafate, Argentina</h3>
+          <p>Business proposal evaluation and market viability analysis for sustainable urban mobility solutions in self-guided tourism.</p>
+          <div class="tags">
+            <span class="tag">Product Strategy</span>
+            <span class="tag">Sustainable Mobility</span>
+            <span class="tag">Innovation</span>
+          </div>
+          <div class="card-footer">
+            <a class="link-action" href="https://ri.itba.edu.ar/entities/publication/2c4ff74a-cef1-4a2f-989c-156a1059ba26" target="_blank">Read Publication (ITBA Repository) →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="kicker">Undergraduate thesis · ITBA</div>
+          <h3>Image Segmentation Using the Mean Shift Method: State of the Art</h3>
+          <p>Comprehensive technical review and analysis of non-parametric clustering and Mean Shift algorithms applied to computer vision segmentation.</p>
+          <div class="tags">
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Mean Shift</span>
+            <span class="tag">Image Segmentation</span>
+          </div>
+          <div class="card-footer">
+            <a class="link-action" href="https://ri.itba.edu.ar/entities/publication/2c70e884-b35b-420f-a529-aa61b3c42851" target="_blank">Read Publication (ITBA Repository) →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Ivana Azarola · Built with HTML &amp; CSS on GitHub Pages</p>
+    </footer>
+  </div>
+</body>
+</html>
