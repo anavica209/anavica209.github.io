@@ -21,4 +21,4 @@ This site showcases my work across full-stack software development, AI-assisted 
 ## Contact & Links
 
 * **LinkedIn:** [://linkedin.com](https://www.linkedin.com/in/ivana-a-602939149)
-* **GitHub:** [@anavica209](https://github.com//anavica209)
+* **GitHub:** [@anavica209](https://github.com/anavica209)
